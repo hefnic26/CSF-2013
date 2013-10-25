@@ -1,0 +1,2 @@
+import lab2
+print "hello world" +"n"
