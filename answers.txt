@@ -15,7 +15,7 @@ dna_analysis.py program.
 
 Problem 1:
 
-...
+
 
 Problem 2:
 
@@ -23,16 +23,18 @@ Problem 2:
 
 Problem 3:
 
-
+The reason the "linenum" and "seq" lines do not work if you comment them out is because it doesn't define those functions in the program and therefore python doesn't know what it's supposed to do when it later encoutners those variables in the program.
 
 Problem 4:
 
-...
+GC-content: 0.3
+AT-content: 0.7
 
 Collaboration:
 
-...
+stusam07
 
 Reflection:
 
-...
+Oh my goodness!  This was incredibly easy once I got over the fear of just being so wrong for so long.  I had really paniced because I didn't do it for so long and I thought I was going to be impossibly behind; I'm disappointed in myself and I'm sorry I did that.  I feel like I've had the hardest time in this thread of the class unfortunately.
+
