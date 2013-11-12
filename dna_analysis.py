@@ -93,6 +93,10 @@ for bp in seq:
     # increment the count of a
         t_count = t_count + 1
 
+AT_GC_Ratio = float(at_count) / (gc_count)
+
+sum_count = (a_count + t_count + g_count + c_count)
+
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
 at_content = float(at_count) / total_count
@@ -102,7 +106,6 @@ g_content = float(g_count) / total_count
 a_content = float(a_count) / total_count
 t_content = float(t_count) / total_count
 c_content = float(c_count) / total_count
-
 # Print the answer
 print 'GC-content:', gc_content
 print 'AT-content:', at_content

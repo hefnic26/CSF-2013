@@ -3,7 +3,7 @@ Evergreen Login: hefnic26
 Computer Science Foundations
 Programming as a Way of Life
 Fall 2013
-Homework 3 
+Homework 3/4 
 
 For each problem that requires a written answer, write (or copy-and-paste)
 your answers in this file.  When you are done, you should have replaced all
@@ -38,3 +38,79 @@ Reflection:
 
 Oh my goodness!  This was incredibly easy once I got over the fear of just being so wrong for so long.  I had really paniced because I didn't do it for so long and I thought I was going to be impossibly behind; I'm disappointed in myself and I'm sorry I did that.  I feel like I've had the hardest time in this thread of the class unfortunately.
 
+HW 4
+
+Problem 5/7/8:
+
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+A Count: 7701287
+T Count: 7661547
+G Count: 5738773
+C Count: 5879128
+Sum Count: 26980735
+Total Count: 27000000
+Length of sequence: 27000000
+AT/GC Ratio: 1.32234161747
+CG Classification: This is a moderate GC content organism
+
+Problem 6:
+
+Results:
+test-small.fastq
+GC-content: 0.3
+AT-content: 0.7
+A Count: 5
+T Count: 2
+G Count: 1
+C Count: 2
+Sum Count: 10
+Total Count: 10
+Length of sequence: 10
+AT/GC Ratio: 2.33333333333
+CG Classification: This is a low GC content organism
+
+test-moderate-gc-2.fastq
+GC-content: 0.399275
+AT-content: 0.596
+A Count: 11813
+T Count: 12027
+G Count: 7972
+C Count: 7999
+Sum Count: 39811
+Total Count: 40000
+Length of sequence: 40000
+AT/GC Ratio: 1.49270552877
+CG Classification: This is a low GC content organism
+
+
+test-moderate-gc-1.fastq
+GC-content: 0.495025
+AT-content: 0.501
+A Count: 10077
+T Count: 9963
+G Count: 9818
+C Count: 9983
+Sum Count: 39841
+Total Count: 40000
+Length of sequence: 40000
+AT/GC Ratio: 1.01207009747
+CG Classification: This is a moderate GC content organism
+
+
+test-high-gc-1.fastq
+GC-content: 0.5994
+AT-content: 0.3966
+A Count: 7970
+T Count: 7894
+G Count: 12176
+C Count: 11800
+Sum Count: 39840
+Total Count: 40000
+Length of sequence: 40000
+AT/GC Ratio: 0.661661661662
+CG Classification: This is a moderate GC content organism
+
+Reflection/Collaboration:
+
+Sam Stubbins stusam07 helped me get through the latter part of homework4.  I had trouble running my dna_analysis for some time because I had moved the file into a different folder and it was just all sorts of messed up and perpelexing for a good while there.  I am happy to be more caught up then I was and I found it helpful to learn how to run a python script from command line.  It gave me a better understanding of how it works.
