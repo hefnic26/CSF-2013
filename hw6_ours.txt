@@ -1,0 +1,48 @@
+Programming as a Way of Life
+Homework 6 Problems
+
+Group 15 / Pair 5
+Group Member 1 Nicholas Hefling
+Group Member 2 Mary Kallem
+Group Member 3 Ulises Herrera
+
+Problem 3 (Creating Dictionaries):
+Create an empty dictionary called "ages". This dictionary will have peoples' names
+for "keys" and ages for "values." Enter the following into your ages dictionary:
+Nicholas is 28, Mary is 21, and Ulises is 14.
+
+By the end, your dictionary should look like this:
+
+ages = {'Nicholas':28, 'Mary':21, 'Ulises':14}
+
+Problem 4 (Calling a function)
+
+def date_of_birth(age):
+    dob = 2013 - age
+    print "She was born in " + str(dob) + "."
+    
+What would you put in this line to call the function date_of_birth to find out
+Mary's birth year?
+
+date_of_birth(ages['Mary'])
+
+Call function date_of_birth to find out Mary's birth year.
+
+Problem 5 (Assertions)
+Explain what an assertion does. Why is this useful?
+Write an assertion that involves Nicholas.
+
+Problem 6 (Using assertions for two different dictionaries)
+
+Create a new dictionary from your group's names and ages. Write an assertion that 
+tests that the sum of our group's ages is greater than the sum of your group's ages.
+Hint: Use the "sum('dictionary name'.values)" function!
+
+Problem 7 (New Dictionaries!)
+It's ten years later!
+
+Write a function that adds 10 years to each person in the dictionary, such that your output is exactly this:
+
+{'Ulises': 24, 'Nicholas': 38, 'Mary': 31}
+
+Hint: use a similar function to: "sum('dictionary name'.values)"
