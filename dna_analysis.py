@@ -117,6 +117,9 @@ print 'Sum Count:', sum_count
 print 'Total Count:', total_count
 print 'Length of sequence:', len(seq)
 print 'AT/GC Ratio:', AT_GC_Ratio
+x = True
+while x == False:
+    print "loop"
 
 if gc_content > 0.6:
     print 'CG Classification: This is a high GC content organism'
