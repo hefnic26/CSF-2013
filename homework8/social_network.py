@@ -43,7 +43,7 @@ def draw_practice_graph():
 
 # Comment out this line after you have visually verified your practice graph.
 # Otherwise, the picture will pop up every time that you run your program.
-draw_practice_graph()
+#draw_practice_graph()
 
 
 ###
@@ -96,7 +96,7 @@ def draw_rj():
 # Comment out this line after you have visually verified your rj graph and
 # created your PDF file.
 # Otherwise, the picture will pop up every time that you run your program.
-draw_rj()
+#draw_rj()
 
 
 ###
@@ -107,6 +107,17 @@ def friends(graph, user):
     """Returns a set of the friends of the given user, in the given graph.
     The parameter 'user' is the string name of a person in the graph.
     """
+    "Romeo" = ["Juliet", "Friar Laurence", "Benvolio", "Montague", "Mercutio"]
+    "Juliet" = ["Tybalt", "Nurse", "Capulet", "Romeo", "Friar Laurence"]
+    "Friar Laurence" = ["Romeo", "Juliet"]
+    "Benvolio" = ["Romeo", "Montague]
+    "Tybalt" = ["Juliet", "Capulet"]
+    "Nurse" = ["Juliet"]
+    "Capulet" = ["Tybalt", "Juliet", "Escalus", "Paris"]
+    "Escalus" = ["Paris", "Montague", "Capulet", "Mercutio"]
+    "Paris" = ["Escalus", "Mercutio", "Capulet"]
+    "Mercutio" = ["Escalus", "Paris", "Romeo"]
+    "Montague" = ["Romeo", "Benvolio", "Escalus"]
     return set(graph.neighbors(user))
 
 
@@ -114,6 +125,17 @@ def friends_of_friends(graph, user):
     """Returns a set of friends of friends of the given user, in the given graph.
     The result does not include the given user nor any of that user's friends.
     """
+    friends_of_friends(rj, "Romeo") = ["Escalus", "Paris", "Tybalt", "Capulet", "Nurse"]
+    friends_of_friends(rj, "Juliet") = ["Escalus", "Paris", "Benvolio", "Montague", "Mercutio"]
+    friends_of_friends(rj, "Tybalt") = ["Nurse", "Friar Laurence", "Romeo", "Escalus", "Paris"]
+    friends_of_friends(rj, "Nurse") = ["Capulet", "Tybalt", "Friar Laurence", "Romeo"]
+    friends_of_friends(rj, "Capulet") = ["Nurse", "Mercutio", "Romeo", "Friar Laurence"]
+    friends_of_friends(rj, "") = []
+    friends_of_friends(rj, "") = []
+    friends_of_friends(rj, "") = []
+    friends_of_friends(rj, "") = []
+    friends_of_friends(rj, "") = []
+    friends_of_friends(rj, "") = []
     print "To be implemented"
 
 assert friends_of_friends(rj, "Mercutio") == set(['Benvolio', 'Capulet', 'Friar Laurence', 'Juliet', 'Montague'])
@@ -128,8 +150,8 @@ assert common_friends(practice_graph,"A", "D") == set(['B', 'C'])
 assert common_friends(practice_graph,"A", "E") == set([])
 assert common_friends(practice_graph,"A", "F") == set(['C'])
 
-assert common_friends(rj, "Mercutio", "Nurse") == set()
-assert common_friends(rj, "Mercutio", "Romeo") == set()
+assert common_friends(rj, "Mercutio", "Nurse") == set([])
+assert common_friends(rj, "Mercutio", "Romeo") == set([])
 assert common_friends(rj, "Mercutio", "Juliet") == set(["Romeo"])
 assert common_friends(rj, "Mercutio", "Capulet") == set(["Escalus", "Paris"])
 
