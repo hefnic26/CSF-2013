@@ -1,0 +1,14 @@
+Name: Nicholas Hefling
+UW NetID: hefnic26
+CSE 140
+Homework 3: Election prediction
+
+
+Collaboration:
+
+Amok github, kelmar github
+
+Reflection:
+
+This hw is frustrating because I just don't feel like I can understand it at all.  That feeling doesn't really make it easy to continue on with it.  Obviously, I need more help and I should've been going to the tutors much more than I have; however, I do many times feel embarressed (which, I understand is completely absurd, but it's something I'm trying to deal with) because I don't know what I should know or how to ask for help (mainly because I don't even know what I should know!) when I'm feeling so confused.
+
