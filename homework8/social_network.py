@@ -107,17 +107,17 @@ def friends(graph, user):
     """Returns a set of the friends of the given user, in the given graph.
     The parameter 'user' is the string name of a person in the graph.
     """
-    "Romeo" = ["Juliet", "Friar Laurence", "Benvolio", "Montague", "Mercutio"]
-    "Juliet" = ["Tybalt", "Nurse", "Capulet", "Romeo", "Friar Laurence"]
-    "Friar Laurence" = ["Romeo", "Juliet"]
-    "Benvolio" = ["Romeo", "Montague]
-    "Tybalt" = ["Juliet", "Capulet"]
-    "Nurse" = ["Juliet"]
-    "Capulet" = ["Tybalt", "Juliet", "Escalus", "Paris"]
-    "Escalus" = ["Paris", "Montague", "Capulet", "Mercutio"]
-    "Paris" = ["Escalus", "Mercutio", "Capulet"]
-    "Mercutio" = ["Escalus", "Paris", "Romeo"]
-    "Montague" = ["Romeo", "Benvolio", "Escalus"]
+    #"Romeo" = ["Juliet", "Friar Laurence", "Benvolio", "Montague", "Mercutio"]
+    #"Juliet" = ["Tybalt", "Nurse", "Capulet", "Romeo", "Friar Laurence"]
+    #"Friar Laurence" = ["Romeo", "Juliet"]
+    #"Benvolio" = ["Romeo", "Montague]
+    #"Tybalt" = ["Juliet", "Capulet"]
+    #"Nurse" = ["Juliet"]
+    #"Capulet" = ["Tybalt", "Juliet", "Escalus", "Paris"]
+    #"Escalus" = ["Paris", "Montague", "Capulet", "Mercutio"]
+    #"Paris" = ["Escalus", "Mercutio", "Capulet"]
+    #"Mercutio" = ["Escalus", "Paris", "Romeo"]
+    #"Montague" = ["Romeo", "Benvolio", "Escalus"]
     return set(graph.neighbors(user))
 
 
@@ -130,12 +130,12 @@ def friends_of_friends(graph, user):
     friends_of_friends(rj, "Tybalt") = ["Nurse", "Friar Laurence", "Romeo", "Escalus", "Paris"]
     friends_of_friends(rj, "Nurse") = ["Capulet", "Tybalt", "Friar Laurence", "Romeo"]
     friends_of_friends(rj, "Capulet") = ["Nurse", "Mercutio", "Romeo", "Friar Laurence"]
-    friends_of_friends(rj, "") = []
-    friends_of_friends(rj, "") = []
-    friends_of_friends(rj, "") = []
-    friends_of_friends(rj, "") = []
-    friends_of_friends(rj, "") = []
-    friends_of_friends(rj, "") = []
+    friends_of_friends(rj, "Mercutio") = ["Benvolio", "Capulet", "Friar Laurence", "Juliet", "Montague"]
+    friends_of_friends(rj, "Friar Laurence") = ["Tybalt", "Capulet", "Benvolio", "Montague", "Mercutio", "Nurse"]
+    friends_of_friends(rj, "Benvolio") = ["Juliet", "Escalus", "Friar Laurence", "Mercutio"]
+    friends_of_friends(rj, "Montague") = ["Paris", "Mercutio", "Friar Laurence", "Capulet"]
+    friends_of_friends(rj, "Escalus") = ["Tybalt", "Juliet", "Benvolio", "Romeo"]
+    friends_of_friends(rj, "Paris") = ["Romeo", "Juliet", "Montague", "Tybalt"]
     print "To be implemented"
 
 assert friends_of_friends(rj, "Mercutio") == set(['Benvolio', 'Capulet', 'Friar Laurence', 'Juliet', 'Montague'])
