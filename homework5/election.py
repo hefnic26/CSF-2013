@@ -38,26 +38,26 @@ def state_edges(election_result_rows):
     #I'm totally lost here!  I feel like it isn't importing the correct data.
 # I quite seriously have no idea what to do from here.
 
-#Democrat_edge = {}
-#for state in election_result_rows:
-#        edge = float(state['Dem']) - float(state['Rep'])
-#       state_edge = [str(state['State'])] = edge
+#    Democrat_edge = {}
+#    for state in election_result_rows:
+#    edge = float(state['Dem']) - float(state['Rep'])
+#    state_edge = [str(state['State'])] = edge
 
-#print Democrat_edge
+#    print Democrat_edge
 
-#Using one of my hw6's github to gain some insight; he had help from a tutor.
-#I'm just curious to see what even happens. 
-dic = {}
-for i in range(len(election_result_rows)):
-         state_dic = election_result_rows[i]
-         state = state_dic['State']
-         edge = row_to_edge(state_dic)
-         tempt_dic = {state:edge}
-         dic = dict( tempt_dic.items() +  dic.items())
-print dic
+#    Using one of my hw6's github to gain some insight; he had help from a tutor.
+#    I'm just curious to see what even happens. 
+    dic = {}
+    for i in range(len(election_result_rows)):
+        state_dic = election_result_rows[i]
+        state = state_dic['State']
+        edge = row_to_edge(state_dic)
+        tempt_dic = {state:edge}
+        dic = dict( tempt_dic.items() +  dic.items())
+    return dic
 
-#I'm not sure I'm importing all the necessary data as I can't get anything to 
-#recognize "election_result_rows"
+#    I'm not sure I'm importing all the necessary data as I can't get anything to 
+#    recognize "election_result_rows"
 
 ################################################################################
 # Problem 2: Find the most recent poll row
