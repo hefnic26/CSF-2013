@@ -1,0 +1,10 @@
+Do the following to receive credit:
+
+* Finish and commit problem 1 of elections.py
+* Send your hw6 paired team your problems on your github repo
+* Write and submit self-eval and faculty evaluations for me, Neal, Sherri online at my.evergreen.edu
+
+by Friday at 5pm.
+Show up for tutoring with me tomorrow at 10am.
+
+Thanks, Paul
