@@ -27,7 +27,6 @@ practice_graph.add_edge("A", "B")
 practice_graph.add_edge("A", "C")
 practice_graph.add_edge("B", "C")
 practice_graph.add_edge("B", "D")
-practice_graph.add_edge("B", "F")
 practice_graph.add_edge("C", "F")
 practice_graph.add_edge("C", "D")
 practice_graph.add_edge("F", "D")
@@ -96,7 +95,7 @@ def draw_rj():
 # Comment out this line after you have visually verified your rj graph and
 # created your PDF file.
 # Otherwise, the picture will pop up every time that you run your program.
-#draw_rj()
+draw_rj()
 
 
 ###
@@ -104,9 +103,10 @@ def draw_rj():
 ###
 
 #def friends(graph, user):
-    """Returns a set of the friends of the given user, in the given graph.
-    The parameter 'user' is the string name of a person in the graph.
-    """
+"""
+Returns a set of the friends of the given user, in the given graph.
+The parameter 'user' is the string name of a person in the graph.
+"""
     #"Romeo" = ["Juliet", "Friar Laurence", "Benvolio", "Montague", "Mercutio"]
     #"Juliet" = ["Tybalt", "Nurse", "Capulet", "Romeo", "Friar Laurence"]
     #"Friar Laurence" = ["Romeo", "Juliet"]
@@ -122,9 +122,11 @@ def draw_rj():
 
 
 #def friends_of_friends(graph, user):
-    """Returns a set of friends of friends of the given user, in the given graph.
-    The result does not include the given user nor any of that user's friends.
-    """
+"""
+Returns a set of friends of friends of the given user, in the given graph.
+The result does not include the given user nor any of that user's friends.
+"""
+
  #   friends_of_friends(rj, "Romeo") = set(["Escalus", "Paris", "Tybalt", "Capulet", "Nurse"])
   #  friends_of_friends(rj, "Juliet") = set(["Escalus", "Paris", "Benvolio", "Montague", "Mercutio"])
    # friends_of_friends(rj, "Tybalt") = set(["Nurse", "Friar Laurence", "Romeo", "Escalus", "Paris"])
@@ -142,7 +144,9 @@ def draw_rj():
 
 
 #def common_friends(graph, user1, user2):
-    """Returns the set of friends that user1 and user2 have in common."""
+"""
+Returns the set of friends that user1 and user2 have in common.
+"""
   #  print "To be implemented"
 
 #assert common_friends(practice_graph,"A", "B") == set(['C'])
@@ -157,7 +161,8 @@ def draw_rj():
 
 
 #def number_of_common_friends_map(graph, user):
-    """Returns a map from each user U to the number of friends U has in common with the given user.
+"""
+Returns a map from each user U to the number of friends U has in common with the given user.
     The map keys are the users who have at least one friend in common with the
     given user, and are neither the given user nor one of the given user's friends.
     Take a graph G for example:
@@ -176,22 +181,25 @@ def draw_rj():
 
 
 #def number_map_to_sorted_list(map):
-    """Given a map whose values are numbers, return a list of the keys.
+"""
+Given a map whose values are numbers, return a list of the keys.
     The keys are sorted by the number they map to, from greatest to least.
     When two keys map to the same number, the keys are sorted by their
-    natural sort order, from least to greatest."""
-    print "To be implemented"
+    natural sort order, from least to greatest.
+"""
+#print "To be implemented"
 
 #assert number_map_to_sorted_list({"a":5, "b":2, "c":7, "d":5, "e":5}) == ['c', 'a', 'd', 'e', 'b']
 
 
 #def recommend_by_number_of_common_friends(graph, user):
-    """Return a list of friend recommendations for the given user.
+"""
+Return a list of friend recommendations for the given user.
     The friend recommendation list consists of names of people in the graph
     who are not yet a friend of the given user.
     The order of the list is determined by the number of common friends.
-    """
-    print "To be implemented"
+"""
+    #print "To be implemented"
 
 
 #assert recommend_by_number_of_common_friends(practice_graph,"A") == ['D', 'F']
@@ -204,22 +212,24 @@ def draw_rj():
 ###
 
 #def influence_map(graph, user):
-    """Returns a map from each user U to the friend influence, with respect to the given user.
+"""
+Returns a map from each user U to the friend influence, with respect to the given user.
     The map only contains users who have at least one friend in common with U,
     and are neither U nor one of U's friends.
     See the assignment for the definition of friend influence.
-    """
+"""
  #   print "To be implemented"
 
 #assert influence_map(rj, "Mercutio") == { 'Benvolio': 0.2, 'Capulet': 0.5833333333333333, 'Friar Laurence': 0.2, 'Juliet': 0.2, 'Montague': 0.45 }
 
 
 #def recommend_by_influence(graph, user):
-    """Return a list of friend recommendations for the given user.
+"""
+Return a list of friend recommendations for the given user.
     The friend recommendation list consists of names of people in the graph
     who are not yet a friend of the given user.
     The order of the list is determined by the influence measurement.
-    """
+"""
  #   print "To be implemented"
 
 #assert recommend_by_influence(rj, "Mercutio") == ['Capulet', 'Montague', 'Benvolio', 'Friar Laurence', 'Juliet']
