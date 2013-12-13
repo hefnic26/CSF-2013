@@ -1,6 +1,6 @@
 Do the following to receive credit:
 
-* Finish and commit problem 1 of elections.py
+* [DONE] Finish and commit problem 1 of elections.py
 * [DONE] Send your hw6 paired team your problems on your github repo
 * Write and submit self-eval and faculty evaluations for me, Neal, Sherri online at my.evergreen.edu
 
